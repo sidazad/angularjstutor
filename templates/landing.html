@@ -1,0 +1,21 @@
+{% verbatim %}
+<style>
+
+    btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+        background-color: #2386A3;
+
+    }
+
+</style>
+
+<div class="container-fluid">
+
+    <h2>AngularJS Fundamentals and Practice</h2>
+    <tabset>
+        <tab ng-repeat="t in model.tabs"  select="go(t.route)" active="t.active" heading="{{t.title}}">
+        </tab>
+    </tabset>
+    <div ui-view></div>
+</div>
+
+{% endverbatim %}
